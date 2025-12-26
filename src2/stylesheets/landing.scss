@@ -1,0 +1,454 @@
+@import 'basics.scss';
+
+.main {
+    background-image: url('../images/bg-main.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: 50% 30%;
+    background-size: contain;
+    height: 100vh;
+
+    .buble {
+        width: 614px;
+        height: 350px;
+        background-image: url('../images/bg-buble.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        align-content: center;
+    }
+    .content {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        width: 384px;
+        margin: auto;
+    }
+
+    .bottom {
+        margin-bottom: 10vh;
+        display: flex;
+        align-items: end;
+    }
+
+    .arrow {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        div {
+            img {
+                width: 64px;
+                height: 32px;
+            }
+        }
+    }
+
+    display: flex;
+    align-items: flex-end;
+}
+
+.triggers {
+    background-image: url('../images/trigger-bg.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    gap: 30vh;
+    padding-block: 64px;
+    .top-content, .bottom-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10vh;
+    }
+    .trigger {
+        padding: 16px 32px;
+        display: inline-block;
+        background-color: var(--blue-color);
+        color: var(--warm-color);
+    }
+
+    .first {
+        transform: rotate(7deg);
+    }
+
+    .second {
+        transform: rotate(-6deg);
+    }
+
+    .third {
+        transform: rotate(16deg);
+    }
+
+    .fourth {
+        transform: rotate(-5deg);
+    }
+}
+
+h1.title {
+        text-align: center;
+        margin-block: 80px;
+    }
+
+.solution {
+    .content {
+        max-width: 818px;
+        p {
+            max-width: 456px;
+        }
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .books {
+        h6 {
+            display: inline-block;
+            padding-inline: 48px;
+            height: 56px;
+            align-content: center;
+            text-align: center;
+            margin-block: 0px;
+            border-radius: 4px;
+        }
+
+        .blue {
+            background-color: var(--blue-color);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+        }
+
+        .cold {
+            background-color: var(--cold-color);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100% 100%;
+        }
+
+        .long {
+            padding-inline: 96px;
+        }
+
+        .books-top, .books-bottom {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        display: flex;
+        align-items: end;
+        padding-bottom: 10vh;
+    }
+    display: flex;
+    flex-direction: column;
+    gap: 20vh;
+    background-image: url('../images/solution-bg.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.features {
+    h2.title {
+        display: none;
+    }
+    .cards {
+        .card {
+            .cold {
+                background-color: var(--cold-color);
+            }
+            .blue {
+                background-color: var(--blue-color);
+            }
+            max-width: 456px;
+            .content {
+                padding: 32px 32px 160px 32px;
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+            }
+
+            .icon {
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+                position: absolute;
+                bottom: -120px;
+                right: 48px;  
+                width: 240px; 
+                height: 240px;
+            }
+
+            position: relative;
+        }
+
+        .rigth {
+            display: flex;
+            flex-direction: column;
+            gap: 256px;
+        }
+
+        display: flex;
+        gap: 24px;
+        justify-content: space-between;
+
+        .center {
+            h2 {
+                padding-block: 96px;
+                text-align: center;
+            }
+        }
+    }
+    background-image: url('../images/features-bg.svg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    padding-bottom: 75vh;
+}
+
+.form {
+    .content {
+        max-width: 816px;
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+        form {
+            display: flex;
+            input {
+                all: unset;
+                font-family: var(--primary-font);
+                font-size: 13.5pt;
+                color: var(--400-gray-color);
+                width: 456px;
+                outline: 4px solid var(--blue-color);
+                outline-offset: -4px;
+                border-radius: 4px;
+                height: 48px;
+                padding-inline: 32px
+            }
+            input::placeholder {  
+                color: var(--accent-color);  
+                opacity: 1;  
+            }
+            gap: 24px;
+        }
+    }
+    .qr {
+        width: 216px;
+        height: 216px;
+        img {
+            width: 100%;
+        }
+    }
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url('../images/form-bg.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+@media (max-width: 1599px) {
+    .main {
+
+        .buble {
+        width: 454px;
+        height: 250px;
+        }
+        .content {
+            width: 340px;
+        }
+    }
+
+    .features {
+        .cards {
+            .card {
+                .icon {
+                    position: absolute;
+                    bottom: -70px;
+                    right: 8px;  
+                    width: 140px; 
+                    height: 140px;
+                }
+
+                position: relative;
+            }
+        }
+    }
+
+    .form {
+        .content {
+            max-width: 602px;
+            form {
+                display: flex;
+                input {
+                    font-size: 13.5pt;
+                    width: 355px;
+                    outline: 4px solid var(--blue-color);
+                    outline-offset: -4px;
+                    border-radius: 4px;
+                    height: 48px;
+                    padding-inline: 32px
+                }
+                input::placeholder {  
+                    color: var(--accent-color);  
+                    opacity: 1;  
+                }
+                gap: 24px;
+            }
+        }
+        .qr {
+            width: 216px;
+            height: 216px;
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    main {
+        padding: 0;
+        margin: 0;
+        .container {
+            margin-inline: auto;
+            max-width: 370px;
+        }
+    }
+    .main {
+        background-image: url('../images/bg-main-mob.svg');
+        background-position: 50% 15%;
+        background-size: auto;
+        height: 100vh;
+
+        .bottom {
+            flex-direction: column;
+            margin-bottom: 15vh;
+            align-items: center;
+            gap: 24px;
+        }
+
+        .buble {
+            max-width: 346px;
+            height: 300px;
+            background-image: url('../images/main-bg-mob.svg');
+            .content {
+                max-width: 218px;
+            }
+        }
+    }
+
+    .triggers {
+        background-image: url('../images/trigger-bg-mob.svg');
+    }
+
+    .solution {
+        .books {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        background-image: none;
+    }
+
+    .features {
+        .cards {
+            .card {
+                .icon {
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                    position: absolute;
+                    bottom: -70px;
+                    right: 16px;  
+                    width: 140px; 
+                    height: 140px;
+                }
+
+                position: relative;
+                max-width: 340px;
+            }
+
+            display: flex;
+            flex-direction: column;
+            gap: 96px;
+            justify-content: space-between;
+
+            .center {
+                h2 {
+                    display: none;
+                }
+            }
+            .rigth {
+                gap: 96px;
+            }
+        }
+
+        h2.title {
+            display: block;
+            margin-block: 32px;
+        }
+
+        .return {
+            .card {
+                .cold {
+                    background-color: var(--blue-color);
+                }
+                .blue {
+                    background-color: var(--cold-color);
+                }
+            }
+        }
+
+    padding-bottom: 40vh;
+    }
+    .form {
+        .content {
+            max-width: 100%;
+            form {
+                display: flex;
+                flex-direction: column;
+                input {
+                    font-size: 13.5pt;
+                    width: 100%;
+                    outline: 4px solid var(--blue-color);
+                    outline-offset: -4px;
+                    border-radius: 4px;
+                    height: 48px;
+                    padding-inline: 32px
+                }
+                input::placeholder {  
+                    color: var(--accent-color);  
+                    opacity: 1;  
+                }
+                button {
+                    width: 100%;
+                }
+                gap: 24px;
+                align-items: center;
+            }
+        }
+        .qr {
+            width: 216px;
+            height: 216px;
+            img {
+                width: 100%;
+            }
+        }
+        h2 {
+            width: 260px;
+        }
+        background-image: url('../images/form-bg-mob.svg');
+        background-position: 50% 30%;
+        height: 75vh;
+        align-items: start;
+        padding-top: 40px;
+    }
+}

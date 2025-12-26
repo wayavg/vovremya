@@ -1,0 +1,195 @@
+@import 'basics.scss';
+
+.topic {
+    padding-top: 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    .blue {
+        color: var(--blue-color);
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .cont {
+        display: flex;
+        justify-content: space-between;
+        
+        .time {
+            display: flex;
+            gap: 4px;
+        }
+    }
+
+    .head {
+        max-width: 800px;
+    }
+}
+
+.image {
+    width: 1400px;
+    height: 836px;
+    img {
+        width: 100%;
+    }
+    margin-block: 16px;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: 4fr 1fr 7fr;
+    grid-column-gap: 24px;
+    grid-row-gap: 0px;
+    padding-block: 16px;
+}
+
+.div1 { 
+    grid-area: 1 / 1 / 2 / 2;     
+}
+
+.num {
+    display: flex;
+    gap: 8px;
+}
+.div2 { 
+    grid-area: 1 / 3 / 2 / 4; 
+    .text {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+}
+
+.default-cond {
+    padding: 32px 32px;
+    background-color: var(--blue-color);
+    color: var(--warm-color);
+}
+
+.spec {
+    margin-bottom: 32px;
+}
+
+.parent_2 {
+    display: grid;
+    grid-template-columns: 4fr 1fr 7fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 24px;
+    grid-row-gap: 0px;
+    margin-bottom: 32px;
+}
+
+.div1 { grid-area: 1 / 1 / 2 / 2; }
+.div2 { grid-area: 1 / 3 / 2 / 4; }
+.div3 { grid-area: 2 / 1 / 3 / 2; }
+.div4 { grid-area: 2 / 3 / 3 / 4; }
+.div5 { grid-area: 3 / 1 / 4 / 2; }
+.div6 { grid-area: 3 / 3 / 4 / 4; }
+.div7 { grid-area: 4 / 3 / 5 / 4; }
+
+h5.continue {
+    margin-block: 32px;
+}
+.continue {
+    .parent {
+        display: grid;
+        grid-template-columns: 4fr 1fr 7fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 24px;
+        grid-row-gap: 24px;
+
+        margin-bottom: 32px;
+    }
+    .div1 { grid-area: 1 / 1 / 3 / 3; }
+    .div2 { grid-area: 1 / 3 / 2 / 4; }
+    .div3 { grid-area: 2 / 3 / 3 / 4; }
+
+    .div2, .div3, .div1 {
+        background-color: var(--blue-color);
+        color: var(--warm-color);
+        padding: 40px;
+        min-height: 148px;
+        .cont {
+            display: flex;
+            justify-content: space-between;
+            
+            .time {
+                display: flex;
+                gap: 4px;
+            }
+        }
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 1599px) {
+    .image {
+        width: 1040px;
+        height: 600px;
+        img {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 738px) {
+    .image {
+        width: 320px;
+        height: 190px;
+        img {
+            width: 100%;
+        }
+        margin-block: 16px;
+    }
+    .parent {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 24px;
+        grid-row-gap: 32px;
+        .div1 { grid-area: 1 / 1 / 2 / 2; 
+            padding-inline: 16px;
+        }
+        .div2 { grid-area: 2 / 1 / 3 / 2; 
+            padding-inline: 16px;
+        } 
+    }
+
+
+
+    .parent_2 {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(7, 1fr);
+        grid-column-gap: 24px;
+        grid-row-gap: 32px;
+        margin-bottom: 32px;
+        height: 100%;
+        .div1 { grid-area: 1 / 1 / 2 / 2; padding-inline: 16px;}
+        .div2 { grid-area: 2 / 1 / 3 / 2; padding-inline: 16px;}
+        .div3 { grid-area: 3 / 1 / 4 / 2; padding-inline: 16px;}
+        .div4 { grid-area: 4 / 1 / 5 / 2; padding-inline: 16px;}
+        .div5 { grid-area: 5 / 1 / 6 / 2; padding-inline: 16px;}
+        .div6 { grid-area: 6 / 1 / 7 / 2; padding-inline: 16px;}
+        .div7 { grid-area: 7 / 1 / 8 / 2; padding-inline: 16px;}
+    }
+
+
+    .continue {
+        .parent, .parent_2 {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        }
+
+        .div1 { grid-area: 1 / 1 / 2 / 2; }
+        .div2 { grid-area: 2 / 1 / 3 / 2; }
+        .div3 { grid-area: 3 / 1 / 4 / 2; }
+    }
+}

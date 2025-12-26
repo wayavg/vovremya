@@ -1,0 +1,50 @@
+@font-face {
+  font-family: 'CoFoDrifter';
+  src: url('../fonts/CoFoDrifter-Medium.otf') format('otf'),
+  /* url('../fonts/CoFoDrifter-Medium.oet') format('oet'), */
+  url('../fonts/CoFoDrifter-Medium.svg') format('svg'),
+  url('../fonts/CoFoDrifter-Medium.ttf') format('tff'),
+  url('../fonts/CoFoDrifter-Medium.woff') format('woff'),
+  url('../fonts/CoFoDrifter-Medium.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FreeSet';
+  src: url('../fonts/FreeSet-Book.otf') format('otf'),
+  /* url('../fonts/FreeSet-Book.oet') format('oet'), */
+  url('../fonts/FreeSet-Book.svg') format('svg'),
+  url('../fonts/FreeSet-Book.ttf') format('tff'),
+  url('../fonts/FreeSet-Book.woff') format('woff'),
+  url('../fonts/FreeSet-Book.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: 'FreeSet';
+  src: url('../fonts/FreeSet-DemiBold.otf') format('otf'),
+  /* url('../fonts/FreeSet-DemiBold.oet') format('oet'), */
+  url('../fonts/FreeSet-DemiBold.svg') format('svg'),
+  url('../fonts/FreeSet-DemiBold.ttf') format('tff'),
+  url('../fonts/FreeSet-DemiBold.woff') format('woff'),
+  url('../fonts/FreeSet-DemiBold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: 'FreeSet';
+  src: url('../fonts/FreeSetCond-Book.otf') format('otf'),
+  /* url('../fonts/FreeSetCond-Book.oet') format('oet'), */
+  url('../fonts/FreeSetCond-Book.svg') format('svg'),
+  url('../fonts/FreeSetCond-Book.ttf') format('tff'),
+  url('../fonts/FreeSetCond-Book.woff') format('woff'),
+  url('../fonts/FreeSetCond-Book.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: condensed;
+}

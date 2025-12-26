@@ -1,0 +1,47 @@
+@font-face {
+  font-family: "CoFoDrifter";
+  src: url("../fonts/CoFoDrifter-Medium.otf") format("otf"), url("../fonts/CoFoDrifter-Medium.svg") format("svg"), url("../fonts/CoFoDrifter-Medium.ttf") format("tff"), url("../fonts/CoFoDrifter-Medium.woff") format("woff"), url("../fonts/CoFoDrifter-Medium.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "FreeSet";
+  src: url("../fonts/FreeSet-Book.otf") format("otf"), url("../fonts/FreeSet-Book.svg") format("svg"), url("../fonts/FreeSet-Book.ttf") format("tff"), url("../fonts/FreeSet-Book.woff") format("woff"), url("../fonts/FreeSet-Book.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+}
+@font-face {
+  font-family: "FreeSet";
+  src: url("../fonts/FreeSet-DemiBold.otf") format("otf"), url("../fonts/FreeSet-DemiBold.svg") format("svg"), url("../fonts/FreeSet-DemiBold.ttf") format("tff"), url("../fonts/FreeSet-DemiBold.woff") format("woff"), url("../fonts/FreeSet-DemiBold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+}
+@font-face {
+  font-family: "FreeSet";
+  src: url("../fonts/FreeSetCond-Book.otf") format("otf"), url("../fonts/FreeSetCond-Book.svg") format("svg"), url("../fonts/FreeSetCond-Book.ttf") format("tff"), url("../fonts/FreeSetCond-Book.woff") format("woff"), url("../fonts/FreeSetCond-Book.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: condensed;
+}
+:root {
+  --title-font: "CoFoDrifter", sans-serif;
+  --primary-font: "FreeSet", sans-serif;
+  /* default color */
+  --100-whtie-color: #FFFFFF;
+  --200-polar-color: #F1F1F8;
+  --300-barvinok-color: #C0C4DB;
+  --400-gray-color: #8388AC;
+  --500-dark-gray-color: #40445C;
+  --600-black-color: #000422;
+  /* brand color */
+  --warm-color: #F8F4EB;
+  --cold-color: #D2E8FF;
+  --blue-color: #5884E7;
+  --dark-blue-color: #0B1956;
+  /* semantic color */
+  --correct-color: #8DDC52;
+  --wrong-color: #F25C5C;
+  --warming-color: #F1E061;
+}/*# sourceMappingURL=vars.css.map */
